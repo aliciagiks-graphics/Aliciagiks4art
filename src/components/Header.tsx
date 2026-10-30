@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X, ArrowUpRight, Globe } from 'lucide-react';
 import { motion } from 'motion/react';
 import { ARTIST_PROFILE } from '../data/portfolioData';
+import { MagneticWrapper } from './MagneticWrapper';
 
 interface HeaderProps {
   onNavigate?: (sectionId: string) => void;
@@ -113,14 +114,16 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
 
         {/* Zone 3: Primary CTA */}
         <div className="hidden lg:flex items-center gap-3 shrink-0">
-          <a
-            href="#contact"
-            onClick={(e) => handleLinkClick(e, 'contact')}
-            className="inline-flex items-center gap-1.5 px-4.5 py-2 text-xs font-semibold text-white bg-gradient-to-r from-[#420D58] via-[#5F1B68] to-[#7E22CE] hover:from-[#350A47] hover:to-[#6B21A8] rounded-md transition-all whitespace-nowrap shadow-xs shadow-purple-900/25 hover:shadow-md hover:shadow-purple-900/30 hover:scale-[1.02]"
-          >
-            <span>Get in Touch</span>
-            <ArrowUpRight className="w-3.5 h-3.5" />
-          </a>
+          <MagneticWrapper strength={0.3}>
+            <a
+              href="#contact"
+              onClick={(e) => handleLinkClick(e, 'contact')}
+              className="inline-flex items-center gap-1.5 px-4.5 py-2 text-xs font-semibold text-white bg-gradient-to-r from-[#420D58] via-[#5F1B68] to-[#7E22CE] hover:from-[#350A47] hover:to-[#6B21A8] rounded-md transition-all whitespace-nowrap shadow-xs shadow-purple-900/25 hover:shadow-md hover:shadow-purple-900/30"
+            >
+              <span>Get in Touch</span>
+              <ArrowUpRight className="w-3.5 h-3.5" />
+            </a>
+          </MagneticWrapper>
         </div>
 
         {/* Mobile menu hamburger toggle */}

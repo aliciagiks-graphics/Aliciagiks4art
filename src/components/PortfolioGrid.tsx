@@ -181,6 +181,8 @@ export const PortfolioGrid: React.FC = () => {
                 exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ duration: 0.25 }}
                 key={project.id}
+                data-cursor={project.type === 'video' ? 'play' : 'inspect'}
+                data-cursor-text={project.type === 'video' ? 'PLAY REEL' : 'INSPECT'}
                 onClick={() => setActiveModalProject(project)}
                 className="group cursor-pointer rounded-2xl border border-purple-200/80 bg-white hover:border-purple-300 transition-all duration-300 hover:shadow-xl hover:shadow-purple-950/8 hover:-translate-y-1 flex flex-col overflow-hidden"
               >

@@ -70,3 +70,10 @@
 .animate-pulse-glow {
   animation: pulseGlow 5s ease-in-out infinite;
 }
+
+/* Custom Magnetic Cursor Utilities */
+@media (pointer: fine) {
+  [data-cursor="play"], [data-cursor="inspect"] {
+    cursor: none !important;
+  }
+}

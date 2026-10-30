@@ -14,10 +14,12 @@ import { ExperienceSection } from './components/ExperienceSection';
 import { TestimonialsSection } from './components/TestimonialsSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
+import { MagneticCursor } from './components/MagneticCursor';
 
 export default function App() {
   return (
     <div className="min-h-screen flex flex-col selection:bg-purple-200 selection:text-purple-950">
+      <MagneticCursor />
       <Header />
       <main className="flex-1">
         <Hero />

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowDown, ArrowUpRight, Play, Sparkles } from 'lucide-react';
 import { motion } from 'motion/react';
+import { MagneticWrapper } from './MagneticWrapper';
 
 export const Hero: React.FC = () => {
   const [isPlayingPreview, setIsPlayingPreview] = useState(false);
@@ -65,23 +66,27 @@ export const Hero: React.FC = () => {
               <span className="hover:text-purple-900 transition-colors">3D Art</span>
             </div>
 
-            {/* CTAs with rich royal purple styling */}
+            {/* CTAs with rich royal purple styling and magnetic physics */}
             <div className="flex flex-wrap items-center gap-3 pt-3">
-              <a
-                href="#portfolio"
-                className="inline-flex items-center gap-2 px-5 py-2.5 text-xs sm:text-sm font-semibold text-white bg-gradient-to-r from-[#420D58] via-[#5F1B68] to-[#7E22CE] hover:from-[#350A47] hover:to-[#6B21A8] rounded-md transition-all shadow-sm shadow-purple-900/25 hover:shadow-md hover:shadow-purple-900/30 hover:scale-[1.02]"
-              >
-                <span>View Selected Work</span>
-                <ArrowDown className="w-4 h-4" />
-              </a>
+              <MagneticWrapper strength={0.28}>
+                <a
+                  href="#portfolio"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 text-xs sm:text-sm font-semibold text-white bg-gradient-to-r from-[#420D58] via-[#5F1B68] to-[#7E22CE] hover:from-[#350A47] hover:to-[#6B21A8] rounded-md transition-all shadow-sm shadow-purple-900/25 hover:shadow-md hover:shadow-purple-900/30"
+                >
+                  <span>View Selected Work</span>
+                  <ArrowDown className="w-4 h-4" />
+                </a>
+              </MagneticWrapper>
 
-              <a
-                href="#contact"
-                className="inline-flex items-center gap-2 px-5 py-2.5 text-xs sm:text-sm font-semibold text-purple-950 bg-white hover:bg-purple-50/70 border border-purple-200 hover:border-purple-300 rounded-md transition-all shadow-2xs hover:scale-[1.01]"
-              >
-                <span>Start a Project</span>
-                <ArrowUpRight className="w-4 h-4 text-purple-600" />
-              </a>
+              <MagneticWrapper strength={0.28}>
+                <a
+                  href="#contact"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 text-xs sm:text-sm font-semibold text-purple-950 bg-white hover:bg-purple-50/70 border border-purple-200 hover:border-purple-300 rounded-md transition-all shadow-2xs"
+                >
+                  <span>Start a Project</span>
+                  <ArrowUpRight className="w-4 h-4 text-purple-600" />
+                </a>
+              </MagneticWrapper>
             </div>
 
             {/* Quiet trust marker */}
@@ -98,7 +103,11 @@ export const Hero: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
             className="lg:col-span-5 w-full"
           >
-            <div className="relative rounded-2xl border border-purple-200/90 bg-white/90 backdrop-blur-xs p-3 shadow-xl shadow-purple-950/5 group hover:border-purple-300 transition-all duration-300">
+            <div 
+              data-cursor="play"
+              data-cursor-text="WATCH REEL"
+              className="relative rounded-2xl border border-purple-200/90 bg-white/90 backdrop-blur-xs p-3 shadow-xl shadow-purple-950/5 group hover:border-purple-300 transition-all duration-300 cursor-pointer"
+            >
               <div className="relative aspect-4/3 sm:aspect-16/10 rounded-xl overflow-hidden bg-neutral-900 border border-purple-200/60 shadow-inner">
                 {isPlayingPreview ? (
                   <video

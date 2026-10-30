@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Mail, MessageCircle, Copy, Check, Send, ArrowUpRight, Instagram, Github, ShieldAlert } from 'lucide-react';
 import { motion } from 'motion/react';
 import { CloudflareTurnstile } from './CloudflareTurnstile';
+import { MagneticWrapper } from './MagneticWrapper';
 
 export const ContactSection: React.FC = () => {
   const [copiedEmail, setCopiedEmail] = useState(false);
@@ -92,6 +93,8 @@ export const ContactSection: React.FC = () => {
 
               <button
                 type="button"
+                data-cursor="copy"
+                data-cursor-text="COPY EMAIL"
                 onClick={handleCopyEmail}
                 className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-purple-950 bg-purple-50 hover:bg-purple-100 border border-purple-200 rounded-md transition-colors"
                 title="Copy email to clipboard"
@@ -291,13 +294,15 @@ export const ContactSection: React.FC = () => {
               </div>
 
               <div className="pt-2 flex items-center justify-between">
-                <button
-                  type="submit"
-                  className="inline-flex items-center gap-2 px-6 py-2.5 text-xs sm:text-sm font-semibold text-white bg-gradient-to-r from-[#420D58] via-[#5F1B68] to-[#7E22CE] hover:from-[#350A47] hover:to-[#6B21A8] rounded-md transition-all shadow-md shadow-purple-900/25 hover:shadow-lg hover:shadow-purple-900/35 hover:scale-[1.02]"
-                >
-                  <Send className="w-3.5 h-3.5" />
-                  <span>Send Project Inquiry</span>
-                </button>
+                <MagneticWrapper strength={0.25}>
+                  <button
+                    type="submit"
+                    className="inline-flex items-center gap-2 px-6 py-2.5 text-xs sm:text-sm font-semibold text-white bg-gradient-to-r from-[#420D58] via-[#5F1B68] to-[#7E22CE] hover:from-[#350A47] hover:to-[#6B21A8] rounded-md transition-all shadow-md shadow-purple-900/25 hover:shadow-lg hover:shadow-purple-900/35"
+                  >
+                    <Send className="w-3.5 h-3.5" />
+                    <span>Send Project Inquiry</span>
+                  </button>
+                </MagneticWrapper>
 
                 {submitted && (
                   <span className="text-xs text-purple-900 font-semibold bg-purple-100 px-2.5 py-1 rounded">
