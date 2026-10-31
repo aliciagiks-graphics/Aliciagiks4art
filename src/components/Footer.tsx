@@ -40,12 +40,6 @@ export const Footer: React.FC = () => {
             <a href="#about" className="hover:text-purple-900 transition-colors">
               About
             </a>
-            <a href="#experience" className="hover:text-purple-900 transition-colors">
-              Experience
-            </a>
-            <a href="#testimonials" className="hover:text-purple-900 transition-colors">
-              Feedback
-            </a>
             <a href="#contact" className="hover:text-purple-900 transition-colors">
               Contact
             </a>
@@ -78,7 +72,7 @@ export const Footer: React.FC = () => {
               <span>Instagram</span>
             </a>
             <a
-              href="https://github.com/Tesx2/Aliciagiks4art"
+              href="https://github.com/aliciagiks-graphics/Aliciagiks4art"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-purple-900 transition-colors flex items-center gap-1 text-xs"

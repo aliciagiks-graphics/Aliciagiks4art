@@ -155,7 +155,7 @@ export const ContactSection: React.FC = () => {
                 </a>
 
                 <a
-                  href="https://github.com/Tesx2/Aliciagiks4art"
+                  href="https://github.com/aliciagiks-graphics/Aliciagiks4art"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-3 py-2 rounded-md border border-purple-200 bg-white text-xs font-medium text-neutral-800 hover:text-purple-950 hover:bg-purple-50 transition-colors shadow-2xs"

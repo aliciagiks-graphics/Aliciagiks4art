@@ -35,14 +35,14 @@ export interface TestimonialItem {
 export const ARTIST_PROFILE = {
   name: 'Mary Alicia',
   handle: 'Aliciagiks4art',
-  title: 'Visual Storyteller, Artist & Motion Director',
-  tagline: 'Bridging the space between structural brand systems and cinematic moving narratives.',
+  title: 'Graphic Designer, Animator & Artist',
+  tagline: 'Creative work across graphic design, illustration, animation, and digital experiences.',
   location: 'Remote · Available Worldwide',
   email: 'aliciagiks@gmail.com',
   whatsapp: '+254768795272',
   instagram: '@geeks4drisony',
-  github: 'Tesx2/Aliciagiks4art',
-  availability: 'Accepting Selected Q4 & Q1 Commissions',
+  github: 'aliciagiks-graphics/Aliciagiks4art',
+  availability: 'Open for selected commissions',
 };
 
 export const CATEGORY_FILTERS = [
@@ -209,6 +209,12 @@ export const SERVICES_LIST = [
     description: 'Bespoke hand-drawn illustrations, character designs, concept sketches, and editorial visual artworks tailored to your brand personality.',
     deliverables: ['Character Illustrations', 'Editorial Visuals', 'Digital Art Commissions', 'Vector Iconography'],
   },
+  {
+    number: '05',
+    title: 'Digital Experiences',
+    description: 'Visual concepts for digital platforms, from website graphics and interface explorations to motion-led campaign experiences.',
+    deliverables: ['Web Visuals', 'Interface Concepts', 'Digital Campaigns', 'Motion for Screen'],
+  },
 ];
 
 export const EXPERIENCE_TIMELINE: ExperienceItem[] = [
@@ -289,20 +295,20 @@ export const DEPLOYMENT_ENVIRONMENTS = [
     badge: 'Production',
     description: 'Root custom apex domain and www subdomain served with automated SSL/TLS certificates and zero-latency CDN edge delivery.',
     dnsRecords: [
-      { type: 'CNAME', host: 'www', target: 'tesx2.github.io' },
+      { type: 'CNAME', host: 'www', target: 'aliciagiks-graphics.github.io' },
       { type: 'A', host: '@', target: '185.199.108.153' },
       { type: 'A', host: '@', target: '185.199.109.153' },
     ],
   },
   {
     type: 'GitHub Pages Deployment',
-    url: 'https://tesx2.github.io/Aliciagiks4art/',
-    displayUrl: 'tesx2.github.io/Aliciagiks4art',
+    url: 'https://aliciagiks-graphics.github.io/Aliciagiks4art/',
+    displayUrl: 'aliciagiks-graphics.github.io/Aliciagiks4art',
     status: 'Connected',
     badge: 'GitHub Pages',
     description: 'Static hosting from the repository main/gh-pages branch. Configured with relative asset resolution (base: "./") to eliminate subpath 404s.',
     dnsRecords: [
-      { type: 'Repo Source', host: 'github.com', target: 'Tesx2/Aliciagiks4art' },
+      { type: 'Repo Source', host: 'github.com', target: 'aliciagiks-graphics/Aliciagiks4art' },
       { type: 'Base Path', host: 'Config', target: 'Relative (./)' },
     ],
   },

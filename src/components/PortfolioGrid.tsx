@@ -102,10 +102,10 @@ export const PortfolioGrid: React.FC = () => {
               <span className="font-semibold">Selected Works</span>
             </div>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-neutral-900 tracking-tight">
-              Featured Portfolio
+              Work across image, print, and motion
             </h2>
             <p className="text-sm sm:text-base text-neutral-600 mt-2 max-w-xl">
-              One standout from each discipline — click any work to explore detailed case studies, video motion loops, and art stills.
+              A selection of graphic design, animation, illustration, photography, and digital art. Open a project to see it up close.
             </p>
           </div>
 
@@ -119,7 +119,7 @@ export const PortfolioGrid: React.FC = () => {
                 className="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold text-purple-950 bg-purple-50 hover:bg-purple-100/90 rounded-md transition-all border border-purple-200 shadow-2xs hover:scale-[1.02]"
               >
                 <Layers className="w-3.5 h-3.5 text-purple-700" />
-                <span>{loadingArchive ? 'Loading archive...' : 'Browse Full 85-Piece Archive'}</span>
+                <span>{loadingArchive ? 'Loading archive...' : 'Browse all projects'}</span>
               </button>
             ) : (
               <div className="flex items-center gap-1.5 text-xs text-purple-900 font-mono bg-purple-50 px-3 py-1.5 rounded-md border border-purple-200">

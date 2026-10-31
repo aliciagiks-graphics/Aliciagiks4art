@@ -90,20 +90,6 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
             About
           </a>
           <a
-            href="#experience"
-            onClick={(e) => handleLinkClick(e, 'experience')}
-            className="hover:text-purple-900 transition-colors whitespace-nowrap shrink-0 py-1"
-          >
-            Experience
-          </a>
-          <a
-            href="#testimonials"
-            onClick={(e) => handleLinkClick(e, 'testimonials')}
-            className="hover:text-purple-900 transition-colors whitespace-nowrap shrink-0 py-1"
-          >
-            Feedback
-          </a>
-          <a
             href="#contact"
             onClick={(e) => handleLinkClick(e, 'contact')}
             className="hover:text-purple-900 transition-colors whitespace-nowrap shrink-0 py-1"
@@ -168,20 +154,6 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
             className="block px-3 py-2 text-sm font-medium text-neutral-800 hover:text-purple-950 hover:bg-purple-100/70 rounded-md transition-colors"
           >
             About
-          </a>
-          <a
-            href="#experience"
-            onClick={(e) => handleLinkClick(e, 'experience')}
-            className="block px-3 py-2 text-sm font-medium text-neutral-800 hover:text-purple-950 hover:bg-purple-100/70 rounded-md transition-colors"
-          >
-            Experience
-          </a>
-          <a
-            href="#testimonials"
-            onClick={(e) => handleLinkClick(e, 'testimonials')}
-            className="block px-3 py-2 text-sm font-medium text-neutral-800 hover:text-purple-950 hover:bg-purple-100/70 rounded-md transition-colors"
-          >
-            Testimonials
           </a>
           <a
             href="#contact"

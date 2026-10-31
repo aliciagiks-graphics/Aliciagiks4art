@@ -23,7 +23,7 @@ export const CustomDomainSection: React.FC = () => {
     const cleanSubpath = testSubpath.replace(/^\/+|\/+$/g, '');
     setTestedResolution({
       customDomainUrl: 'https://aliciagiks4art.com/',
-      githubPagesUrl: `https://tesx2.github.io/${cleanSubpath}/`,
+      githubPagesUrl: `https://aliciagiks-graphics.github.io/${cleanSubpath}/`,
       assetUrl: `./geeks4drisony/motion%20graphic/inspiration.mp4`,
       status: 'Relative base ("./") resolves correctly in both environments without 404 errors',
     });
@@ -122,7 +122,7 @@ export const CustomDomainSection: React.FC = () => {
                 <span>Custom Domain DNS &amp; CNAME Directives</span>
               </h3>
               <p className="text-xs text-neutral-500 mt-1">
-                Preserves custom domain binding (`aliciagiks4art.com`) pointing to GitHub Pages (`tesx2.github.io`).
+                Custom domain hosting is managed through the connected hosting provider.
               </p>
             </div>
 
@@ -161,12 +161,12 @@ export const CustomDomainSection: React.FC = () => {
                 <tr>
                   <td className="py-2.5 font-bold text-neutral-900">CNAME</td>
                   <td className="py-2.5">www</td>
-                  <td className="py-2.5 text-neutral-900">tesx2.github.io</td>
+                  <td className="py-2.5 text-neutral-900">aliciagiks-graphics.github.io</td>
                   <td className="py-2.5 text-neutral-400">Auto (DNS)</td>
                   <td className="py-2.5 text-right">
                     <button
                       type="button"
-                      onClick={() => handleCopy('tesx2.github.io', 'cname-target')}
+                      onClick={() => handleCopy('aliciagiks-graphics.github.io', 'cname-target')}
                       className="text-2xs text-neutral-500 hover:text-neutral-900"
                     >
                       {copiedRecord === 'cname-target' ? 'Copied' : 'Copy'}

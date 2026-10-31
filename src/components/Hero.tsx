@@ -36,12 +36,12 @@ export const Hero: React.FC = () => {
               <span className="w-2 h-2 rounded-full bg-[#420D58] shadow-xs shadow-purple-500/50 animate-pulse" />
               <span className="font-bold tracking-wider">Mary Alicia</span>
               <span aria-hidden="true" className="text-purple-300">·</span>
-              <span className="text-purple-700">Visual Storyteller &amp; Motion Artist</span>
+              <span className="text-purple-700">Graphic Designer · Animator · Artist</span>
             </div>
 
             {/* Display Headline with purple gradient italic word */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.35rem] font-bold text-neutral-900 tracking-tight leading-[1.12] text-balance">
-              Visual stories in{' '}
+              Creative ideas, made visible in{' '}
               <span className="italic font-serif font-normal bg-gradient-to-r from-[#420D58] via-[#7E22CE] to-[#C026D3] bg-clip-text text-transparent">
                 motion
               </span>{' '}
@@ -50,20 +50,20 @@ export const Hero: React.FC = () => {
 
             {/* Lead copy */}
             <p className="text-base sm:text-lg text-neutral-600 leading-relaxed max-w-xl">
-              I craft bespoke brand identities, cinematic motion pieces, and high-impact digital art for digital-first brands, visionary studios, and independent creators.
+              I&apos;m Mary Alicia. I create graphic design, animation, motion work, and digital experiences with a focus on clear ideas and memorable visuals.
             </p>
 
             {/* Unboxed Specialties with purple separators */}
             <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs sm:text-sm font-medium text-neutral-800 pt-1">
-              <span className="hover:text-purple-900 transition-colors">Motion Graphics</span>
+              <span className="hover:text-purple-900 transition-colors">Graphic Design</span>
               <span aria-hidden="true" className="text-purple-300">·</span>
               <span className="hover:text-purple-900 transition-colors">Branding &amp; Identity</span>
               <span aria-hidden="true" className="text-purple-300">·</span>
-              <span className="hover:text-purple-900 transition-colors">Campaign Art</span>
+              <span className="hover:text-purple-900 transition-colors">Animation</span>
               <span aria-hidden="true" className="text-purple-300">·</span>
               <span className="hover:text-purple-900 transition-colors">Illustration</span>
               <span aria-hidden="true" className="text-purple-300">·</span>
-              <span className="hover:text-purple-900 transition-colors">3D Art</span>
+              <span className="hover:text-purple-900 transition-colors">Digital Experiences</span>
             </div>
 
             {/* CTAs with rich royal purple styling and magnetic physics */}
@@ -92,7 +92,7 @@ export const Hero: React.FC = () => {
             {/* Quiet trust marker */}
             <div className="pt-2 text-xs text-purple-800/80 flex items-center gap-2">
               <Sparkles className="w-3.5 h-3.5 text-purple-500" />
-              <span>Full-service creative direction from concept sketch to high-res master exports</span>
+              <span>Selected work across graphic design, illustration, animation, and motion</span>
             </div>
           </motion.div>
 
@@ -169,32 +169,20 @@ export const Hero: React.FC = () => {
           className="mt-12 sm:mt-16 pt-8 border-t border-purple-200/80 grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8"
         >
           <div className="p-3 rounded-lg hover:bg-purple-100/40 transition-colors">
-            <div className="text-2xl sm:text-3xl font-bold text-neutral-900 font-mono tabular-nums flex items-baseline gap-1">
-              <span>85</span>
-              <span className="text-purple-600 font-bold">+</span>
-            </div>
-            <p className="text-xs sm:text-sm text-neutral-600 mt-1">Curated Artworks &amp; Projects</p>
+            <div className="text-xl sm:text-2xl font-bold text-neutral-900 tracking-tight">Graphic design</div>
+            <p className="text-xs sm:text-sm text-neutral-600 mt-1">Identity, campaigns &amp; print</p>
           </div>
           <div className="p-3 rounded-lg hover:bg-purple-100/40 transition-colors">
-            <div className="text-2xl sm:text-3xl font-bold text-neutral-900 font-mono tabular-nums flex items-baseline gap-1">
-              <span>6</span>
-              <span className="text-purple-600 font-bold">Disciplines</span>
-            </div>
-            <p className="text-xs sm:text-sm text-neutral-600 mt-1">Design &amp; Motion Arts</p>
+            <div className="text-xl sm:text-2xl font-bold text-neutral-900 tracking-tight">Animation</div>
+            <p className="text-xs sm:text-sm text-neutral-600 mt-1">Motion &amp; moving image</p>
           </div>
           <div className="p-3 rounded-lg hover:bg-purple-100/40 transition-colors">
-            <div className="text-2xl sm:text-3xl font-bold text-neutral-900 font-mono tabular-nums flex items-baseline gap-1">
-              <span>&lt; 24</span>
-              <span className="text-purple-600 font-bold">h</span>
-            </div>
-            <p className="text-xs sm:text-sm text-neutral-600 mt-1">Response Time on Inquiries</p>
+            <div className="text-xl sm:text-2xl font-bold text-neutral-900 tracking-tight">Digital</div>
+            <p className="text-xs sm:text-sm text-neutral-600 mt-1">Interactive experiences</p>
           </div>
           <div className="p-3 rounded-lg hover:bg-purple-100/40 transition-colors">
-            <div className="text-2xl sm:text-3xl font-bold text-neutral-900 font-mono tabular-nums flex items-baseline gap-1">
-              <span>100</span>
-              <span className="text-purple-600 font-bold">%</span>
-            </div>
-            <p className="text-xs sm:text-sm text-neutral-600 mt-1">Static Hosting &amp; Edge Delivered</p>
+            <div className="text-xl sm:text-2xl font-bold text-neutral-900 tracking-tight">Illustration</div>
+            <p className="text-xs sm:text-sm text-neutral-600 mt-1">Drawing, art &amp; editorial</p>
           </div>
         </motion.div>
 

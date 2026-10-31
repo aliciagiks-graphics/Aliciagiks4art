@@ -92,16 +92,16 @@ export const AboutSection: React.FC = () => {
             className="lg:col-span-7 space-y-6"
           >
             <h3 className="text-xl sm:text-2xl font-bold text-neutral-900 leading-snug">
-              Bridging the gap between static brand systems and{' '}
-              <span className="text-[#420D58] italic font-serif">dynamic moving visual narratives</span>.
+              I bring ideas to life through{' '}
+              <span className="text-[#420D58] italic font-serif">image, type, and motion</span>.
             </h3>
 
             <div className="space-y-4 text-sm sm:text-base text-neutral-600 leading-relaxed">
               <p>
-                I&apos;m Mary Alicia — a creative professional, artist, and visual storyteller working at the intersection of brand systems and moving image. I craft identities, campaign visuals, and motion pieces that feel cinematic up close and clear at a glance.
+                I&apos;m Mary Alicia, a graphic designer, animator, and artist. This portfolio brings together selected design work, animation, motion pieces, illustration, and digital experiments.
               </p>
               <p>
-                Whether animating a company mark from scratch, directing a full brand identity package, or producing intricate vector illustrations, my focus is always on storytelling, rhythmic pacing, and mathematical typographic precision.
+                I enjoy taking a project from its first idea to a finished visual, making work that feels thoughtful, distinctive, and easy to connect with.
               </p>
             </div>
 
@@ -110,20 +110,20 @@ export const AboutSection: React.FC = () => {
               <div className="p-4 rounded-xl border border-purple-200/80 bg-purple-50/40 hover:bg-purple-50/70 transition-colors">
                 <div className="flex items-center gap-2 text-xs font-bold text-purple-950 mb-1">
                   <CheckCircle2 className="w-4 h-4 text-[#420D58]" />
-                  <span>Cinematic Motion Pacing</span>
+                  <span>Motion &amp; animation</span>
                 </div>
                 <p className="text-xs text-neutral-600">
-                  Custom easing curves and spatial choreography designed to capture attention in the first 2 seconds.
+                  Logo animation, short-form motion, and moving-image experiments.
                 </p>
               </div>
 
               <div className="p-4 rounded-xl border border-purple-200/80 bg-purple-50/40 hover:bg-purple-50/70 transition-colors">
                 <div className="flex items-center gap-2 text-xs font-bold text-purple-950 mb-1">
                   <CheckCircle2 className="w-4 h-4 text-[#420D58]" />
-                  <span>Scalable Brand Architecture</span>
+                  <span>Graphic design</span>
                 </div>
                 <p className="text-xs text-neutral-600">
-                  Systematic logos and type rules engineered for 16px favicons up to massive outdoor billboards.
+                  Visual identities, campaign graphics, posters, and print pieces.
                 </p>
               </div>
             </div>
