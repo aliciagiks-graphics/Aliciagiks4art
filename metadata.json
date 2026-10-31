@@ -1,6 +1,5 @@
 {
-  "name": "Mary Alicia - Visual Storyteller & Creative Portfolio",
-  "description": "Modern, elegant portfolio website for Mary Alicia, creative professional, artist, and visual storyteller. Built for Cloudflare Pages with zero-egress media streaming.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "name": "Mary Alicia — Aliciagiks4art Portfolio",
+  "description": "A creative portfolio showcasing graphic design, illustration, animation, motion design, and digital experiences.",
+  "requestFramePermissions": []
 }
